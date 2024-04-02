@@ -3,7 +3,6 @@ import React from 'react'
 import Style from "./header.module.css";
 import { BsTelephone } from "react-icons/bs";
 import { CiMenuFries } from "react-icons/ci";
-
 import _nav from "./_nav";
 import Link from 'next/link';
 import TopNav from './top_navigation';
