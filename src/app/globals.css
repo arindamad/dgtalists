@@ -927,7 +927,7 @@ section {
 
 .about-us .we-offer {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .about-us .we-offer i {
@@ -3992,7 +3992,7 @@ section {
   margin-bottom: 20px;
   text-align: left;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
 }
@@ -4886,7 +4886,7 @@ section {
   margin-bottom: 50px;
   position: relative;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -5375,7 +5375,7 @@ section {
 
 .ai-process .card .process-no {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: baseline;
 }
 
@@ -5466,7 +5466,7 @@ section {
 
 .iot-development .iot-services .iot-icon-spcl {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   gap: 20px;
@@ -6978,7 +6978,7 @@ svg.radial-progress text {
 .key-benifit .key-list li {
   position: relative;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -7108,7 +7108,7 @@ svg.radial-progress text {
 .discover .left-discover .key-list li {
   position: relative;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -7175,7 +7175,7 @@ svg.radial-progress text {
 .transport .key-list li {
   position: relative;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   color: #fff;
 }
@@ -7257,7 +7257,7 @@ svg.radial-progress text {
 .inventory-management .inventory-management-content .key-list li {
   position: relative;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   color: #fff;
 }
@@ -7437,7 +7437,7 @@ svg.radial-progress text {
 .node-development .node-service .service-content h3 {
   color: #000;
   font-size: 20px;
-  text-align: start;
+  text-align: flex-start;
   margin-top: 15px;
   font-weight: 900;
   text-transform: capitalize;
@@ -7446,7 +7446,7 @@ svg.radial-progress text {
 .node-development .node-service .service-content p {
   color: #666;
   font-size: 16px;
-  text-align: start;
+  text-align: flex-start;
 }
 
 /* Why Tatvasoft Section  */
@@ -11695,7 +11695,7 @@ img {
 
 .contact-page .tp-section .tp-section-sub-title {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -12831,6 +12831,25 @@ img {
   opacity: 1;
   visibility: visible;
 }
+/* slider css dots */
+.slick-slider .slick-dots li{
+  width: auto;
+}
+.slick-slider .slick-dots li button{
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  border-radius: 10px;
+  background: var(--dot-bg, #a19ff4) ;
+}
+.slick-slider .slick-dots li button::before{
+  display: none;
+}
+.slick-slider .slick-dots li.slick-active button{
+  background: #433ef3;
+  width: var(--dot-width, 50px);
+}
+
 
 /*============== Responsive css =================*/
 @media screen and (max-width: 1440px) {

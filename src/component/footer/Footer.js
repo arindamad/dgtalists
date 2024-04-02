@@ -57,7 +57,7 @@ const Footer = () => {
 
                                 <ul>
 
-                                    <li><a href="javascript:;">AI Based Document Automation Platform</a></li>
+                                    <li><a href="!#">AI Based Document Automation Platform</a></li>
                                     <li><a href="iot-based-logistic.html">IOT Based Logistic Solution</a></li>
                                     <li><a href="javascript:;">B2B Marketplace</a></li>
                                     <li><a href="cab-booking-case-study.html">Cab Booking Solution</a></li>

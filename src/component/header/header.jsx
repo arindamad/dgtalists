@@ -3,6 +3,7 @@ import React from 'react'
 import Style from "./header.module.css";
 import { IoIosArrowDown } from "react-icons/io";
 import { BsTelephone } from "react-icons/bs";
+import Link from 'next/link';
 
 
 
@@ -11,11 +12,11 @@ export default function Header() {
   <div id="header" className={`${Style.header} fixed-top d-flex align-items-center`}>
 
     <div className="container d-flex align-items-center justify-content-between">
-      <a href="index.html" className={`${Style.logo} d-flex align-items-center me-auto me-lg-0`}>
+      <Link href="/" className={`${Style.logo} d-flex align-items-center me-auto me-lg-0`}>
 
         <Image src="/logo-blue-- 1.png" alt="" width={88} height={76} />
 
-      </a>
+      </Link>
 
       <nav>
 
@@ -32,7 +33,7 @@ export default function Header() {
             <div className={Style.main_menu}>
 
               <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><Link href="/">Home</Link></li>
                 <li className={`${Style.mega_menu_dropdown} ${Style.mega_menu_demo_2} ${Style.has_dropdown}`}>
 
                   <a href="#">Services <IoIosArrowDown/></a>
@@ -41,7 +42,7 @@ export default function Header() {
 
                     <div className={`${Style.mega_menu_item}`}>
 
-                      <a href="custom-software-development.html">Custom Software Development</a>
+                      <Link href="custom_software_development">Custom Software Development</Link>
 
                       <a href="enterprise-software-development.html">Enterprise Software Development </a>
 
