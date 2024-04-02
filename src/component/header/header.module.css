@@ -115,7 +115,6 @@
 /*  */
 .main_menu {
     padding: 0;
-    padding-left: 100px;
 }
 
 .main_menu>ul>li {
@@ -178,7 +177,7 @@
     margin-left: 25px;
 }
 
-.main_menu ul li a {
+.main_menu ul li a,  .main_menu ul li span {
     font-size: 13px;
     color: #353535;
     display: flex;
@@ -187,6 +186,7 @@
     font-weight: 600;
     text-transform: uppercase;
 }
+
 
 .main_menu ul li .active,
 .main_menu ul li:hover>a {
@@ -288,6 +288,7 @@
 
 .mobile_btn {
     display: none;
+    font-size: 26px;
 }
 
 .mobile_btn i {
@@ -300,7 +301,48 @@
     margin-top: 0;
     z-index: 99;
 }
+
+
+@media (min-width: 992px) {
+    /* This media query is for gretter that 992px devices  */
+    .main_menu ul li ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        margin-top: 50px;
+    }
+
+    .main_menu ul li .mega_menu {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        margin-top: 50px;
+    }
+
+    .main_menu ul li:hover>ul {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 0px;
+        z-index: 99;
+    }
+
+    .main_menu ul li:hover>.mega_menu {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 0;
+        z-index: 99;
+    }
+
+    .nav-tabs {
+        display: flex;
+    }
+
+    .card .card-header {
+        display: none;
+    }
+}
 @media (max-width: 991px) {
+    /* This media query is for less that that 991px devices  */
     .header {
         height: 70px;
         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
@@ -326,6 +368,9 @@
         background: #248be2;
         padding: 0;
       }
+      .main_menu.open{
+        display: block;
+      }
     
       .main_menu ul li {
         display: block;
@@ -335,10 +380,13 @@
         float: right;
         font-size: 10px;
       }
-      .main_menu ul li a {
+      .main_menu ul li a, .main_menu ul li span {
         border-bottom: 1px solid #ddd;
         padding: 10px;
         color: #fff;
+      }
+      .main_menu ul li span{
+        justify-content: space-between;
       }
       .main_menu ul li ul {
         width: 100%;
@@ -382,44 +430,8 @@
       .main_menu ul li .mega_menu_item a {
         color: #000;
       }
-
-    
-}
-
-@media (min-width: 991px) {
-    .main_menu ul li ul {
-        visibility: hidden;
-        opacity: 0;
-        position: absolute;
-        margin-top: 50px;
-    }
-
-    .main_menu ul li .mega_menu {
-        visibility: hidden;
-        opacity: 0;
-        position: absolute;
-        margin-top: 50px;
-    }
-
-    .main_menu ul li:hover>ul {
-        visibility: visible;
-        opacity: 1;
-        margin-top: 0px;
-        z-index: 99;
-    }
-
-    .main_menu ul li:hover>.mega_menu {
-        visibility: visible;
-        opacity: 1;
-        margin-top: 0;
-        z-index: 99;
-    }
-
-    .nav-tabs {
-        display: flex;
-    }
-
-    .card .card-header {
+      .call_icon_cta{
         display: none;
-    }
+      }
+    
 }
