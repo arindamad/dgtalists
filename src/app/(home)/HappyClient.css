@@ -1,0 +1,15 @@
+
+
+#happy-client  .slick-dots {
+    display: flex;
+    justify-content: center;
+}
+#happy-client  .slick-dots li {
+    width: fit-content; 
+}
+#happy-client  .slick-dots.slick-active {
+    border: 2px solid #009fe3;
+    background-color: #009fe3;
+    width: 32px; 
+    border-radius: 6px;
+}
