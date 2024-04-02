@@ -1,11 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
-import Style from "./Footer.module.css"
 
 const Footer = () => {
     return (
         <>
-            <footer id="footer" className={Style.footer}>
+            <footer id="footer" className="footer">
 
                 <div className="foooter-top">
 

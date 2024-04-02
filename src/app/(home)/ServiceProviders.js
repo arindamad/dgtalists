@@ -9,10 +9,9 @@ const ServiceProviders = () => {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: false,
-        speed: 2000,
+        autoplay: true,
+        speed: 1000,
         autoplaySpeed: 1000,
-        cssEase: "linear",
         arrows: false,
     };
     return (
