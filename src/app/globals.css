@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 /* Smooth scroll behavior */
+
 :root {
     scroll-behavior: smooth;
   }
@@ -9,8 +11,9 @@
   }
   a {
     color: #248be2;
-    text-decoration: none;
+    text-decoration: none !important;
   }
+
   a:hover {
     color: #248be2;
     text-decoration: none;
@@ -52,6 +55,15 @@
     bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .slick-slide figure {
+    border-radius: 5px;
+    background: #fff;
+    max-width: 181px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
   /* .cta {
     background: #ff7a00;
@@ -981,6 +993,7 @@
     margin-top: -200px;
     overflow: hidden;
     padding-bottom: 60px;
+    z-index: 2;
   }
   .all_services .service_slider {
     padding: 0 20px;
