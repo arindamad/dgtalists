@@ -51,7 +51,7 @@ export default function Home() {
 
               </div>
 
-              <Image src="/hero-bg.png" alt="Img" width={1519} height={713} />
+              <Image priority src="/hero-bg.png" alt="Img" width={1519} height={713} />
 
             </li>
 

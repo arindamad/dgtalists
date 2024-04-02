@@ -4499,6 +4499,9 @@ section {
   background: linear-gradient(180deg, #3c72fc -210.71%, #00060c 100%);
   margin-top: -35px;
   transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .offer__icon img {

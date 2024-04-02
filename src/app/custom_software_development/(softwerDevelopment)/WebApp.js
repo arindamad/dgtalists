@@ -6,12 +6,12 @@ import Slider from 'react-slick'
 const WebApp = () => {
 
     const settings = {
-        dots: false, 
+        dots: false,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 3000,
+        speed: 1000,
         autoplaySpeed: 2000,
         arrows: false,
     };
@@ -28,31 +28,6 @@ const WebApp = () => {
                 <div className='testi-slider-1'>
 
                     <Slider {...settings}>
-                        <div>
-                            <div className="testimonial-wrap">
-
-                                <div className="testimonial-item">
-
-                                    <div className="each_testimonial-1">
-
-                                        <Image width={60} height={60} src="/nodejs.png" className="testimonial-img" alt="" />
-
-                                        <div className="testimonial-content">
-
-                                            <h3>Node App</h3>
-
-                                            <p className="para-4">You can get a tailored solution that satisfies the unique demands of your
-                                                enterprise, reducing costs, enhancing visibility and improving collaboration.</p>
-
-                                            <a className="cta" href="node.js-development.html">Read More</a>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
                         <div>
                             <div className="testimonial-wrap">
 
@@ -91,7 +66,7 @@ const WebApp = () => {
 
                                             <h3>Laravel Application</h3>
 
-                                            <p className="para-4">We empower you to take control of your online presence with first-className and
+                                            <p className="para-4">We empower you to take control of your online presence with first-class and
                                                 cutting-edge Laravel applications.</p>
 
                                             <a className="cta" href="laravel-development.html">Read More</a>
@@ -104,27 +79,50 @@ const WebApp = () => {
                             </div>
                         </div>
                         <div>
-
-                        </div>
-                        <div>
                             <div className="testimonial-wrap">
 
                                 <div className="testimonial-item">
 
                                     <div className="each_testimonial-1">
 
-                                        <Image width={60} height={60} src="/ci.png" className="testimonial-img" alt="" />
+                                        <Image width={60} height={60} src="/nodejs.png" className="testimonial-img" alt="" />
 
                                         <div className="testimonial-content">
 
-                                            <h3>CI App development</h3>
+                                            <h3>Node App</h3>
 
-                                            <p className="para-4">With a tailored CI app designed for your business, we help your business enhance
-                                                customer satisfaction. We use our proprietary technologies to build apps, and let you strengthen
-                                                relationships with your customers.</p>
+                                            <p className="para-4">You can get a tailored solution that satisfies the unique demands of your
+                                                enterprise, reducing costs, enhancing visibility and improving collaboration.</p>
 
-                                            <a className="cta" href="ci-development.html">Read More</a>
+                                            <a className="cta" href="node.js-development.html">Read More</a>
                                         </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div>
+
+                            <div className="testimonial-wrap">
+
+                                <div className="testimonial-item">
+
+                                    <div className="each_testimonial-1">
+
+                                        <Image  width={60} height={60} src="/ci.png" className="testimonial-img" alt=""/>
+
+                                            <div className="testimonial-content">
+
+                                                <h3>CI App development</h3>
+
+                                                <p className="para-4">With a tailored CI app designed for your business, we help your business enhance
+                                                    customer satisfaction. We use our proprietary technologies to build apps, and let you strengthen
+                                                    relationships with your customers.</p>
+
+                                                <a className="cta" href="ci-development.html">Read More</a>
+                                            </div>
 
                                     </div>
 
