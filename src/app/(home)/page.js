@@ -19,10 +19,11 @@ export default function Home() {
 
   useEffect(() => {
     new Glide(".glide", {
-      type: "carousel",
+      type: "slider",
       autoplay: 5600,
       hoverpause: false,
-      gap: 0
+      gap: 0,
+      startAt: 1
     }).mount();
   }, []);
   return (

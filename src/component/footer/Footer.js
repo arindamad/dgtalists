@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Footer = () => {
     return (
@@ -13,7 +14,7 @@ const Footer = () => {
                         <div className="row">
 
                             <div className="col-lg-3 col-md-6 footer-contact">
-                                <a href="index.html">
+                                <a href="/">
                                     <Image src="/footer-logo.png" width={118} height={101} alt=""/></a>
 
                                 <p>We are proud to have been recognized by a variety of key industry organizations for our achievements in
@@ -31,21 +32,21 @@ const Footer = () => {
 
                                 <ul>
 
-                                    <li><a href="custom-software-development.html">Custom Software Development</a></li>
+                                    <li><Link href="/custom-software-development">Custom Software Development</Link></li>
 
-                                    <li><a href="enterprise-software-development.html">Enterprise Software Development</a></li>
+                                    <li><Link href="/enterprise-software-development">Enterprise Software Development</Link></li>
 
-                                    <li><a href="custom-web-development.html">Custom Web Development</a></li>
+                                    <li><Link href="/custom-web-development">Custom Web Development</Link></li>
 
-                                    <li><a href="ai-software-development.html">AI Software Development</a></li>
+                                    <li><Link href="/ai-software-development">AI Software Development</Link></li>
 
-                                    <li><a href="iot.html">Internet of Things (IOT)</a></li>
+                                    <li><Link href="/iot">Internet of Things (IOT)</Link></li>
 
-                                    <li><a href="mobile-app-development.html">Mobile App Development</a></li>
+                                    <li><Link href="/mobile-app-development">Mobile App Development</Link></li>
 
-                                    <li><a href="test-engineering.html">Quality Assurance - Test Engineering</a></li>
+                                    <li><Link href="/test-engineering">Quality Assurance - Test Engineering</Link></li>
 
-                                    <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                                    <li><Link href="/digital-marketing">Digital Marketing</Link></li>
 
                                 </ul>
 
@@ -57,18 +58,18 @@ const Footer = () => {
 
                                 <ul>
 
-                                    <li><a href="!#">AI Based Document Automation Platform</a></li>
-                                    <li><a href="iot-based-logistic.html">IOT Based Logistic Solution</a></li>
-                                    <li><a href="!#">B2B Marketplace</a></li>
-                                    <li><a href="cab-booking-case-study.html">Cab Booking Solution</a></li>
+                                    <li><Link href="!#">AI Based Document Automation Platform</Link></li>
+                                    <li><Link href="/iot-based-logistic">IOT Based Logistic Solution</Link></li>
+                                    <li><Link href="!#">B2B Marketplace</Link></li>
+                                    <li><Link href="/cab-booking-case-study">Cab Booking Solution</Link></li>
 
-                                    <li><a href="case-study.html">Case Studies</a></li>
+                                    <li><Link href="/case-study">Case Studies</Link></li>
 
-                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><Link href="/about-us">About Us</Link></li>
 
-                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                    <li><Link href="/contact-us">Contact Us</Link></li>
 
-                                    <li><a href="blog.html">Blogs</a></li>
+                                    <li><Link href="/blog">Blogs</Link></li>
 
                                 </ul>
 

@@ -127,7 +127,7 @@ const Technology = () => {
                             <div>
                             <div className="each_tech_slider">
                                     <div className="offer__icon">
-                                        <Image width={41} height={41} src="/node-js.png "/>
+                                        <Image width={41} height={41} src="/node-js.png"/>
                                     </div>
                                     <div className="card-content">
                                         <h6>Node Js</h6>
