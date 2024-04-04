@@ -2,14 +2,13 @@ import Image from 'next/image'
 import React from 'react'
 import { BsFillTelephoneFill } from "react-icons/bs";
 
-const CallUs = () => {
+const CallUs = ({data1,data2,data3}) => {
   return (
     <section className="fixed-cost hire-laravel" id="fixed-cost"
       style={{backgroundImage: `url(/hire-laravel-developer-background.jpg)`}}>
       <div className="container">
-        <h3 className="heading">Looking To Develop a Fixed Cost Project ?<span>Please get in touch</span></h3>
-        <p>If the details are clear at the start of the project then project based hiring may be a cost effective
-          solution.</p>
+        <h3 className="heading">{data1}<span>{data2}</span></h3>
+        <p>{data3}</p>
         <h4>
           <span className="ph-ic">
           
