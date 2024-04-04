@@ -55,7 +55,7 @@ const _nav = [
   {
     component: "item",
     name: 'Case Studies',
-    to: '/'
+    to: '/case-study'
   },
   {
     component: "group",
@@ -65,17 +65,17 @@ const _nav = [
       {
         component: "item",
         name: 'About Us',
-        to: '/',
+        to: '/about-us',
       },
       {
         component: "item",
-        name: 'Partnership And Association ',
-        to: '/',
+        name: 'Partnership And Association',
+        to: '/partnership',
       },
       {
         component: "item",
         name: 'Core Team',
-        to: '/',
+        to: '/team',
       },
 
 
@@ -85,7 +85,7 @@ const _nav = [
   {
     component: "item",
     name: 'Contact Us',
-    to: '/contact-us/'
+    to: '/contact-us'
   },
 
 ]

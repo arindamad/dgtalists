@@ -8,6 +8,7 @@ import WeTest from './WeTest'
 import OurSolution from './OurSolution'
 import TechnologySec from './TechnologySec'
 import CaseStudies from './CaseStudies'
+import EngagementModel from './EngagementModel'
 
 
 
@@ -18,6 +19,7 @@ const TestEngineering = () => {
     <Automation/>
     <CallUs data1={'Want to Hire a Test Engineer?'} data2={'Please get in touch'} data3={'We provide Extended Team, Managed Team and Managed services. Hire 5-10+yrs Experienced, Top Rated Custom Enterprise Application Developers'}/>
     <TestingSec/>
+    <EngagementModel/>
     <TestingType/>
     <WeTest/>
     <OurSolution/>

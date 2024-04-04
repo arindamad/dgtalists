@@ -29,7 +29,7 @@ export default function Header() {
       <div className={Style.call_icon_cta}>
         <div className={Style.call_icon}>
           <BsTelephone/>
-          <Link href="tel:+91 9748791820">+91 9748791820</Link>
+          <Link href="/contact-us">+91 9748791820</Link>
         </div>
         <Link className="cta" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Get A Quote</Link>
       </div>

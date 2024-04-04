@@ -1624,6 +1624,7 @@ section {
     gap: 20px;
     align-items: center;
     margin-bottom: 20px;
+    justify-content: space-between;
   }
   .each_testimonial i {
     font-size: 62px;
@@ -6089,6 +6090,11 @@ ul.caseList li::before {left: 10px;}
   width: 100%;
   transition: all 0.5s ease-in-out;
 }
+.teamS-descr .follow-us li a.linkedin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
@@ -6107,6 +6113,9 @@ ul.caseList li::before {left: 10px;}
   right: 30px;
   top: -45px;
   background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ai_software_development .each_ai_box:hover .ai_icon_box {
