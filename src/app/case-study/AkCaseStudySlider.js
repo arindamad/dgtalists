@@ -332,7 +332,7 @@ const AkCaseStudySlider = () => {
                                         </div>
                                         <div className="col-lg-6">
                                             <div className="case_img">
-                                                <img width={490} height={465} src="/app-1.png" />
+                                                <Image width={490} height={465} src="/app-1.png" />
                                             </div>
                                         </div>
                                     </div>

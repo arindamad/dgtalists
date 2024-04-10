@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { BsArrowRight } from "react-icons/bs";
+import Link from 'next/link'
 
 const Skill = () => {
     return (
@@ -79,7 +80,7 @@ const Skill = () => {
 
                                         </div>
 
-                                        <a className="cta " href="custom-web-development.html">Get Started<BsArrowRight/></a>
+                                        <Link className="cta " href="custom-web-development">Get Started<BsArrowRight/></Link>
 
                                     </div>
 

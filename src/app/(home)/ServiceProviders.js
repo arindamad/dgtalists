@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Slider from "react-slick"
+import Link from 'next/link';
 
 const ServiceProviders = () => {
 
@@ -54,7 +55,7 @@ const ServiceProviders = () => {
                                             epitome
                                             of efficiency and innovation for your enterprise. </p>
 
-                                        <a href="custom-software-development.html" className="cta">Read More</a>
+                                        <Link href="custom-software-development" className="cta">Read More</Link>
 
                                     </div>
 
@@ -79,7 +80,7 @@ const ServiceProviders = () => {
                                             and
                                             optimal performance.</p>
 
-                                        <a href="enterprise-software-development.html" className="cta">Read More</a>
+                                        <Link href="enterprise-software-development" className="cta">Read More</Link>
 
                                     </div>
 
@@ -104,7 +105,7 @@ const ServiceProviders = () => {
                                             with visually stunning, user-friendly websites. Maximize the potential of your online presence with
                                             our team. </p>
 
-                                        <a href="custom-web-development.html" className="cta">Read More</a>
+                                        <Link href="custom-web-development" className="cta">Read More</Link>
 
                                     </div>
 
@@ -149,7 +150,7 @@ const ServiceProviders = () => {
                                             in today's dynamic business landscape! Automate processes and gain insights easily, by leveraging
                                             artificial intelligence and machine learning. </p>
 
-                                        <a href="ai-software-development.html" className="cta">Read More</a>
+                                        <Link href="ai-software-development" className="cta">Read More</Link>
                                     </div>
 
                                 </div>
@@ -171,7 +172,7 @@ const ServiceProviders = () => {
                                             solutions
                                             to connect and control devices seamlessly. </p>
 
-                                        <a href="iot.html" className="cta">Read More</a>
+                                        <Link href="iot" className="cta">Read More</Link>
 
                                     </div>
 
@@ -194,7 +195,7 @@ const ServiceProviders = () => {
                                             to create user-friendly, high-performance apps for Android and iOS. Our mobile app development
                                             services help your business reach targeted audience on the go. </p>
 
-                                        <a href="mobile-app-development.html" className="cta">Read More</a>
+                                        <Link href="mobile-app-development" className="cta">Read More</Link>
 
                                     </div>
 
@@ -217,7 +218,7 @@ const ServiceProviders = () => {
                                             There
                                             is maximum test coverage and quality across all stages of product development.</p>
 
-                                        <a href="test-engineering.html" className="cta">Read More</a>
+                                        <Link href="test-engineering" className="cta">Read More</Link>
 
                                     </div>
 
@@ -243,7 +244,7 @@ const ServiceProviders = () => {
                                             at
                                             the most affordable rates.</p>
 
-                                        <a href="digital-marketing.html" className="cta">Read More</a>
+                                        <Link href="digital-marketing" className="cta">Read More</Link>
 
                                     </div>
 

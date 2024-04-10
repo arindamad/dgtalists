@@ -46,7 +46,7 @@ export default function Home() {
                   development services,
                   and help you make accurate decisions without losing time. </p>
 
-                <Link className="cta cta-1" href="ai-software-development.html">Get Started</Link>
+                <Link className="cta cta-1" href="ai-software-development">Get Started</Link>
 
                 <Link className="projects-btn" href="#">See Projects<IoIosArrowRoundForward /></Link>
 
@@ -68,7 +68,7 @@ export default function Home() {
                   business and help you
                   achieve new heights.</p>
 
-                <Link className="cta cta-1" href="custom-software-development.html">Get Started</Link>
+                <Link className="cta cta-1" href="custom-software-development">Get Started</Link>
 
                 <Link className="projects-btn" href="#">See Projects<IoIosArrowRoundForward /></Link>
 
@@ -90,7 +90,7 @@ export default function Home() {
                   the most complex
                   projects competently.</p>
 
-                <Link className="cta cta-1" href="iot.html">Get Started</Link>
+                <Link className="cta cta-1" href="iot">Get Started</Link>
 
                 <Link className="projects-btn" href="#">See Projects<IoIosArrowRoundForward /></Link>
 
@@ -112,7 +112,7 @@ export default function Home() {
                   functional and
                   innovative app for your target audience.</p>
 
-                <Link className="cta cta-1" href="mobile-app-development.html">Get Started</Link>
+                <Link className="cta cta-1" href="mobile-app-development">Get Started</Link>
 
                 <Link className="projects-btn" href="#">See Projects<IoIosArrowRoundForward /></Link>
 

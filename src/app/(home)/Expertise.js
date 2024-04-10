@@ -1,5 +1,6 @@
 import React from 'react'
 import { BsArrowRight } from "react-icons/bs";
+import Link from 'next/link'
 
 
 
@@ -19,7 +20,7 @@ const Expertise = () => {
                         <p>Got ideas? We can make them a reality! Share your ideas with us. Our team can quickly develop customization
                             software just as you envision, with a level of expertise that never fails to achieve results. </p>
 
-                        <a className="cta " href="custom-software-development.html">Get Started &nbsp; <BsArrowRight/></a>
+                        <Link className="cta " href="custom-software-development">Get Started &nbsp; <BsArrowRight/></Link>
 
                     </div>
 

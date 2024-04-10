@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link'
+
 
 const Vlogs = () => {
   return (
@@ -28,11 +30,11 @@ const Vlogs = () => {
 
               <div className="post-info">
 
-                <a href="blog-details-why-choose-react-native.html">
+                <Link href="blog-details-why-choose-react-native">
                   <h2>Why choose React Native for mobile app development for your organization?</h2>
-                </a>
+                </Link>
 
-                <a href="#" className="cta">Read More</a>
+                <Link href="blog-details-why-choose-react-native" className="cta">Read More</Link>
 
 
 
@@ -55,11 +57,11 @@ const Vlogs = () => {
 
               <div className="post-info">
 
-                <a href="blog-details-app-store-optimizing-boosting.html">
+                <Link href="blog-details-app-store-optimizing-boosting">
                   <h2>App Store Optimization for boosting your App's Visibility: Tips and Tricks</h2>
-                </a>
+                </Link>
 
-                <a href="#" className="cta">Read More</a>
+                <Link href="blog-details-app-store-optimizing-boosting" className="cta">Read More</Link>
 
 
 
@@ -82,10 +84,10 @@ const Vlogs = () => {
 
               <div className="post-info">
 
-                <a href="blog-details-required-web-developemnt.html">
+                <Link href="blog-details-required-web-developemnt">
                   <h2>What is required for web application development?</h2>
-                </a>
-                <a href="#" className="cta">Read More</a>
+                </Link>
+                <Link href="blog-details-required-web-developemnt" className="cta">Read More</Link>
 
 
 

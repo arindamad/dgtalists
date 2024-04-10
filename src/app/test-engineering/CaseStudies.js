@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-
+import Link from 'next/link'
 import { IoIosArrowRoundForward } from "react-icons/io";
 const CaseStudies = () => {
   return (
@@ -8,9 +8,9 @@ const CaseStudies = () => {
     
     <section className="all_case_studies" style={{backgroundImage: "url(/case-study-bg.jpg)"}}>
       <div className="container">
-      <h2 class="heading">Check Few Of Our 
+      <h2 className="heading">Check Few Of Our 
           Case Studies</h2>
-        <p class="sub-heading">At DGTALISTS, we are committed to making testing more efficient by adopting the
+        <p className="sub-heading">At DGTALISTS, we are committed to making testing more efficient by adopting the
           proprietary Integrated Manual and Automated Testing (IMAAT) approach. Our proficient Test Automation Leads
           conduct a meticulous analysis to gauge the feasibility of automated testing for each project, meticulously
           weighing the potential Return on Investment (ROI).
@@ -28,11 +28,11 @@ const CaseStudies = () => {
               <div className="case_img">
                 <Image src="/automation-test.jpg" width={415} height={276} alt="case-img"/>
                 <div className="readmore">
-                  <a href="automation-testing.html"><IoIosArrowRoundForward/></a>
+                  <Link href="automation-testing"><IoIosArrowRoundForward/></Link>
                 </div>
               </div>
               <div className="case_content">
-                <a href="automation-testing.html">Automation Testing Using Selenium</a>
+                <Link href="automation-testing">Automation Testing Using Selenium</Link>
               </div>
 
             </div>
@@ -42,11 +42,11 @@ const CaseStudies = () => {
               <div className="case_img">
                 <Image width={415} height={276} src="/saas-case.jpg" alt="case-img"/>
                 <div className="readmore">
-                  <a href="saas-based-case-study.html"><IoIosArrowRoundForward/></a>
+                  <Link href="saas-based-case-study"><IoIosArrowRoundForward/></Link>
                 </div>
               </div>
               <div className="case_content">
-                <a href="saas-based-case-study.html">RFID based Asset Tracking Solution And EAM</a>
+                <Link href="saas-based-case-study">RFID based Asset Tracking Solution And EAM</Link>
               </div>
 
             </div>
@@ -56,12 +56,12 @@ const CaseStudies = () => {
               <div className="case_img">
                 <Image width={415} height={276} src="/mobile-case.jpg" alt="case-img"/>
                 <div className="readmore">
-                  <a href="katalon-case-study.html"><IoIosArrowRoundForward/>
-</a>
+                  <Link href="katalon-case-study"><IoIosArrowRoundForward/>
+</Link>
                 </div>
               </div>
               <div className="case_content">
-                <a href="katalon-case-study.html">RFID based Asset Tracking Solution And EAM</a>
+                <Link href="katalon-case-study">RFID based Asset Tracking Solution And EAM</Link>
               </div>
 
             </div>
