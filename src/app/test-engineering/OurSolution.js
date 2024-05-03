@@ -18,12 +18,12 @@ const OurSolution = () => {
     return (
         <>
 
-            <section class="our_solution" id="our_solution">
-                <div class="container-fluid">
-                    <div class="solution_wrap" style={{backgroundImage: `url(/solution-bg-new.png)`}}>
-                        <div class="section_top">
+            <section className="our_solution" id="our_solution">
+                <div className="container-fluid">
+                    <div className="solution_wrap" style={{backgroundImage: `url(/solution-bg-new.png)`}}>
+                        <div className="section_top">
 
-                            <h4 class="heading"> Test Automation</h4>
+                            <h4 className="heading"> Test Automation</h4>
                         </div>
                         <p>At DGTALISTS, we are committed to making testing more efficient by adopting the proprietary Integrated
                             Manual and Automated Testing (IMAAT) approach. Our proficient Test Automation Leads conduct a meticulous
@@ -37,17 +37,17 @@ const OurSolution = () => {
 
                 </div>
             </section>
-            <section class="solutin_slider_wrapper" id="solutin_slider_wrapper">
-                <div class="container">
-                    <div class="solution_slider" id="">
+            <section className="solutin_slider_wrapper" id="solutin_slider_wrapper">
+                <div className="container">
+                    <div className="solution_slider" id="">
                         <Slider {...settings}>
                             <div>
-                            <div class="each_solution_slider">
-                                <div class="slider_img">
+                            <div className="each_solution_slider">
+                                <div className="slider_img">
                                     <Image width={301} height={363} src="/solution-1.png" alt="soluction"/>
-                                        <div class="slider_content">
+                                        <div className="slider_content">
                                             <h5>Test Case Design</h5>
-                                            <div class="solution_desc">
+                                            <div className="solution_desc">
                                                 <div>
                                                     <h5>Test Case Design</h5>
                                                     <p>Our meticulous approach to test case design ensures thorough coverage and effective validation
@@ -60,12 +60,12 @@ const OurSolution = () => {
                             </div>
                             </div>
                             <div>
-                            <div class="each_solution_slider">
-                                <div class="slider_img">
+                            <div className="each_solution_slider">
+                                <div className="slider_img">
                                     <Image width={301} height={363} src="/solution-1.png" alt="soluction"/>
-                                        <div class="slider_content">
+                                        <div className="slider_content">
                                             <h5>Test Case Design</h5>
-                                            <div class="solution_desc">
+                                            <div className="solution_desc">
                                                 <div>
                                                     <h5>Test Case Design</h5>
                                                     <p>Our meticulous approach to test case design ensures thorough coverage and effective validation
@@ -78,12 +78,12 @@ const OurSolution = () => {
                             </div>
                             </div>
                             <div>
-                            <div class="each_solution_slider">
-                                <div class="slider_img">
+                            <div className="each_solution_slider">
+                                <div className="slider_img">
                                     <Image width={301} height={363} src="/solution-2.png" alt="soluction"/>
-                                        <div class="slider_content">
+                                        <div className="slider_content">
                                             <h5>Manual Testing</h5>
-                                            <div class="solution_desc">
+                                            <div className="solution_desc">
                                                 <div>
                                                     <h5>Manual Testing</h5>
                                                     <p>Leveraging manual testing expertise, we ensure meticulous scrutiny and validation of system
@@ -96,12 +96,12 @@ const OurSolution = () => {
                             </div>
                             </div>
                             <div>
-                            <div class="each_solution_slider">
-                                <div class="slider_img">
+                            <div className="each_solution_slider">
+                                <div className="slider_img">
                                     <Image width={301} height={363} src="/solution-3.png" alt="soluction"/>
-                                        <div class="slider_content">
+                                        <div className="slider_content">
                                             <h5>Automated test development for repetitive task</h5>
-                                            <div class="solution_desc">
+                                            <div className="solution_desc">
                                                 <div>
                                                     <h5>Automated test development for repetitive task</h5>
                                                     <p>We streamline testing processes by creating automated scripts for repetitive tasks, enhancing
@@ -113,12 +113,12 @@ const OurSolution = () => {
                             </div>
                             </div>
                             <div>
-                            <div class="each_solution_slider">
-                                <div class="slider_img">
+                            <div className="each_solution_slider">
+                                <div className="slider_img">
                                     <Image width={301} height={363} src="/solution-4.png" alt="soluction"/>
-                                        <div class="slider_content">
+                                        <div className="slider_content">
                                             <h5>Explorately testing to create new test cases</h5>
-                                            <div class="solution_desc">
+                                            <div className="solution_desc">
                                                 <div>
                                                     <h5>Explorately testing to create new test cases</h5>
                                                     <p>Through exploratory testing, we uncover new scenarios and create dynamic test cases to ensure
@@ -131,12 +131,12 @@ const OurSolution = () => {
                             </div>
                             </div>
                             <div>
-                            <div class="swiper-slide each_solution_slider">
-                                <div class="slider_img">
+                            <div className="swiper-slide each_solution_slider">
+                                <div className="slider_img">
                                     <Image width={301} height={363} src="/solution-1.png" alt="soluction"/>
-                                        <div class="slider_content">
+                                        <div className="slider_content">
                                             <h5>Automated test maintanence</h5>
-                                            <div class="solution_desc">
+                                            <div className="solution_desc">
                                                 <div>
                                                     <h5>Automated test maintanence</h5>
                                                     <p>We ensure the longevity and relevance of automated tests by implementing regular maintenance

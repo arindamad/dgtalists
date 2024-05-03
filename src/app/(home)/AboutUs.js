@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { PiGear } from "react-icons/pi";
+import Link from 'next/link'
 
 
 const AboutUs = () => {
@@ -67,7 +68,7 @@ const AboutUs = () => {
           <p className="about-us-cont">Welcome to Dgtalists, the #1 Software Development Company that ensures a
             transformative experience for every project. Innovation meets excellence at our company, and we pride
             ourselves on delivering tailored solutions to our valued clients. </p>
-          <a className="cta" href="about-us.html">Read More</a>
+          <Link className="cta" href="about-us">Read More</Link>
          
 
       </div>

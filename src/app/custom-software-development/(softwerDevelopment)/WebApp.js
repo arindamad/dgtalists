@@ -1,10 +1,16 @@
 "use client"
 import Image from 'next/image'
-import React from 'react'
+import Link from 'next/link'
+import React, { useState } from 'react'
 import Slider from 'react-slick'
+import Modal from '@/component/modal/Modal'
 
 const WebApp = () => {
 
+    const [show, setShow] = useState(false);
+    
+    const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);
     const settings = {
         dots: false,
         infinite: true,
@@ -16,6 +22,7 @@ const WebApp = () => {
         arrows: false,
     };
     return (
+        <>
         <section className="web-app" id="web-app">
             <div className="container">
                 <h3 className="heading">Web Application Services</h3>
@@ -44,7 +51,7 @@ const WebApp = () => {
                                             <p className="para-4">We make sure that each line of code meets the highest standards, adhering to
                                                 stringent quality assurance processes. </p>
 
-                                            <a className="cta" href="python-development.html">Read More</a>
+                                            <Link className="cta" href="/python-development">Read More</Link>
                                         </div>
 
                                     </div>
@@ -69,7 +76,7 @@ const WebApp = () => {
                                             <p className="para-4">We empower you to take control of your online presence with first-class and
                                                 cutting-edge Laravel applications.</p>
 
-                                            <a className="cta" href="laravel-development.html">Read More</a>
+                                            <Link className="cta" href="/laravel-development">Read More</Link>
                                         </div>
 
                                     </div>
@@ -94,7 +101,7 @@ const WebApp = () => {
                                             <p className="para-4">You can get a tailored solution that satisfies the unique demands of your
                                                 enterprise, reducing costs, enhancing visibility and improving collaboration.</p>
 
-                                            <a className="cta" href="node.js-development.html">Read More</a>
+                                            <Link className="cta" href="/node.js-development">Read More</Link>
                                         </div>
 
                                     </div>
@@ -121,7 +128,7 @@ const WebApp = () => {
                                                     customer satisfaction. We use our proprietary technologies to build apps, and let you strengthen
                                                     relationships with your customers.</p>
 
-                                                <a className="cta" href="ci-development.html">Read More</a>
+                                                <Link className="cta" href="/ci-development">Read More</Link>
                                             </div>
 
                                     </div>
@@ -138,45 +145,12 @@ const WebApp = () => {
 
 
                 </div>
-
-
-                <div className="testi-slider-1 swiper">
-
-                    <div className="swiper-wrapper">
-
-                        <div className="swiper-slide">
-
-
-
-                        </div>
-
-                        <div className="swiper-slide">
-
-
-
-                        </div>
-
-                        <div className="swiper-slide">
-
-
-
-                        </div>
-
-                        <div className="swiper-slide">
-
-
-
-                        </div>
-
-
-                    </div>
-
-                    <div className="swiper-pagination"></div>
-
-                </div>
-                <a className="cta" href="#" data-bs-toggle="modal" data-bs-target=".enquiry_modal_wrap">Hire Software Developer</a>
+                <a className="cta" href="#" data-bs-toggle="modal" onClick={handleShow} data-bs-target=".enquiry_modal_wrap">Hire Software Developer</a>
             </div>
         </section>
+        <Modal show={show} onHide={handleClose}/>
+        </>
+        
     )
 }
 

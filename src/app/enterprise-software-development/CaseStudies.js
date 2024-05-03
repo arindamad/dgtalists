@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link'
 
 import { IoIosArrowRoundForward } from "react-icons/io";
 const CaseStudies = () => {
@@ -24,11 +25,11 @@ const CaseStudies = () => {
               <div className="case_img">
                 <Image src="/automation-test.jpg" width={415} height={276} alt="case-img"/>
                 <div className="readmore">
-                  <a href="automation-testing.html"><IoIosArrowRoundForward/></a>
+                  <Link href="automation-testing"><IoIosArrowRoundForward/></Link>
                 </div>
               </div>
               <div className="case_content">
-                <a href="automation-testing.html"> RFID based Asset Tracking Solution And EAM</a>
+                <Link href="automation-testing">RFID based Asset Tracking Solution And EAM</Link>
               </div>
 
             </div>
@@ -38,11 +39,11 @@ const CaseStudies = () => {
               <div className="case_img">
                 <Image width={415} height={276} src="/saas-case.jpg" alt="case-img"/>
                 <div className="readmore">
-                  <a href="saas-based-case-study.html"><IoIosArrowRoundForward/></a>
+                  <Link href="saas-based-case-study"><IoIosArrowRoundForward/></Link>
                 </div>
               </div>
               <div className="case_content">
-                <a href="saas-based-case-study.html"> RFID based Asset Tracking Solution And EAM</a>
+                <Link href="saas-based-case-study">RFID based Asset Tracking Solution And EAM</Link>
               </div>
 
             </div>
@@ -52,12 +53,12 @@ const CaseStudies = () => {
               <div className="case_img">
                 <Image width={415} height={276} src="/mobile-case.jpg" alt="case-img"/>
                 <div className="readmore">
-                  <a href="katalon-case-study.html"><IoIosArrowRoundForward/>
-</a>
+                  <Link href="katalon-case-study"><IoIosArrowRoundForward/>
+</Link>
                 </div>
               </div>
               <div className="case_content">
-                <a href="katalon-case-study.html"> RFID based Asset Tracking Solution And EAM</a>
+                <Link href="katalon-case-study">RFID based Asset Tracking Solution And EAM</Link>
               </div>
 
             </div>

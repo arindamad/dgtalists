@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link'
 
 const SoftwerDev = () => {
   return (
@@ -17,7 +18,7 @@ const SoftwerDev = () => {
             requirements to DGtalists.</p>
           <p className="para-5">With us, custom software solutions are only a click away for you! Contact us today to
             transform your vision into reality. Discuss your project with us, now.</p>
-          <a className="cta" href="contact-us.html">Contact us today</a>
+          <Link className="cta" href="contact-us">Contact us today</Link>
 
         </div>
 

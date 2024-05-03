@@ -27,7 +27,7 @@ const Emerging = () => {
                                             <p>At DGtalists, we take pride in being a one-stop Android App Development service provider. Our developers can provide you with end-to-end services. You can expect:</p>
                                             <div className="gray-block">
                                                 <ul>
-                                                    <li>Enterprise className Android Apps</li>
+                                                    <li>Enterprise class Android Apps</li>
                                                     <li>Consumer Ready Android E-Commerce Apps</li>
                                                     <li>Android Game Development</li>
                                                     <li>Android Biometric App Development</li>
@@ -48,7 +48,7 @@ const Emerging = () => {
                                             <p>Our experienced iOS app development team assures designing, developing and deploying the perfect mobile application as per your requirement. We have built latest iOS app solutions like gaming app, social networking apps, mCommerce, e-learning , real estate apps etc. using latest technologies :</p>
                                             <div className="gray-block">
                                                 <ul>
-                                                    <li>Enterprise className Android Apps</li>
+                                                    <li>Enterprise class Android Apps</li>
                                                     <li>Consumer Ready Android E-Commerce Apps</li>
                                                     <li>Android Game Development</li>
                                                     <li>Android Biometric App Development</li>
@@ -69,7 +69,7 @@ const Emerging = () => {
                                             <p>We create robust, intuitive, feature-rich android mobile apps using latest technologies. From ideation to development and launching - we provide our clients end-to-end Android App Development Services and our android app developers are specialized in</p>
                                             <div className="gray-block">
                                                 <ul>
-                                                    <li>Enterprise className Android Apps</li>
+                                                    <li>Enterprise class Android Apps</li>
                                                     <li>Consumer Ready Android E-Commerce Apps</li>
                                                     <li>Android Game Development</li>
                                                     <li>Android Biometric App Development</li>
@@ -92,7 +92,7 @@ const Emerging = () => {
                                                 satisfy all usability parameters.</p>
                                             <div className="gray-block">
                                                 <ul>
-                                                    <li>Enterprise className Android Apps</li>
+                                                    <li>Enterprise class Android Apps</li>
                                                     <li>Consumer Ready Android E-Commerce Apps</li>
                                                     <li>Android Game Development</li>
                                                     <li>Android Biometric App Development</li>

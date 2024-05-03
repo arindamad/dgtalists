@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Blog = () => {
   return (
@@ -50,7 +51,7 @@ const Blog = () => {
                 <span className="date">2023-10-11</span>
               </div>
               <div className="each-blog-bottom">
-                <a href="blog-details-why-choose-react-native.html"> <h2>Why choose React Native for mobile app development for your organization?</h2></a>
+                <Link href="blog-details-why-choose-react-native"> <h2>Why choose React Native for mobile app development for your organization?</h2></Link>
                 <p className="sub-heading">
                   Mobile app development can be a bit of a head-scratcher. It demands a considerable amount of your time and energy to develop a user-friendly mobile app. Thanks to technological advancements and.....</p>
                   <a className="cta" href="#">Read more</a>

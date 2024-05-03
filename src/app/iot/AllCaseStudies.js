@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { IoIosArrowRoundForward } from "react-icons/io";
+import Link from 'next/link'
 
 
 const AllCaseStudies = () => {
@@ -28,11 +29,11 @@ const AllCaseStudies = () => {
               <div className="case_img">
                 <Image width={415} height={276} src="/automation-test.jpg" alt="case-img"/>
                 <div className="readmore">
-                  <a href="iot-case-study.html"><IoIosArrowRoundForward/></a>
+                  <Link href="iot-case-study"><IoIosArrowRoundForward/></Link>
                 </div>
               </div>
               <div className="case_content">
-                <a href="iot-case-study.html"> Overcoming Needle Breakage with IoT</a>
+                <Link href="iot-case-study"> Overcoming Needle Breakage with IoT</Link>
               </div>
 
             </div>

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link';
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 const CaseStudies = () => {
@@ -27,11 +28,11 @@ const CaseStudies = () => {
                                 <div className="case_img">
                                     <Image width={415} height={353} src="/rfid-based.png" alt="case-img" />
                                     <div className="readmore">
-                                        <a href="ai-case-study-1.html"><IoIosArrowRoundForward /></a>
+                                        <Link href="ai-case-study-1"><IoIosArrowRoundForward /></Link>
                                     </div>
                                 </div>
                                 <div className="case_content">
-                                    <a href="ai-case-study-1.html"> Credit Risk Scoring</a>
+                                    <Link href="ai-case-study-1"> Credit Risk Scoring</Link>
                                 </div>
 
                             </div>
@@ -41,11 +42,11 @@ const CaseStudies = () => {
                                 <div className="case_img">
                                     <Image width={415} height={353} src="/laboratory.png" alt="case-img" />
                                     <div className="readmore">
-                                        <a href="ai-case-study-2.html"><IoIosArrowRoundForward /></a>
+                                        <Link href="ai-case-study-2"><IoIosArrowRoundForward /></Link>
                                     </div>
                                 </div>
                                 <div className="case_content">
-                                    <a href="ai-case-study-2.html"> Customer Churn Rate</a>
+                                    <Link href="ai-case-study-2"> Customer Churn Rate</Link>
                                 </div>
 
                             </div>
@@ -55,12 +56,12 @@ const CaseStudies = () => {
                                 <div className="case_img">
                                     <Image width={415} height={353} src="/block-chain-enable.png" alt="case-img" />
                                     <div className="readmore">
-                                        <a href="ai-case-study-3.html"><IoIosArrowRoundForward />
-                                        </a>
+                                        <Link href="ai-case-study-3"><IoIosArrowRoundForward />
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="case_content">
-                                    <a href="ai-case-study-3.html">Forex prediction</a>
+                                    <Link href="ai-case-study-3">Forex prediction</Link>
                                 </div>
 
                             </div>
