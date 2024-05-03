@@ -23,12 +23,19 @@ const NavItem = ({ component, name, to, class: className, items }) => {
     );
   } else if (component === 'group') {
     return (
-      <li className={`${className} has_dropdown`}>
+      <li className={`${className} mega_menu_dropdown mega_menu_demo_2 has_dropdown`}>
         <span>{name} <TfiAngleDown /></span>
-        <ul className={`mega_menu sub_menu`}>
-          {items.map((subItem, index) => (
-            <NavItem key={index} {...subItem} />
-          ))}
+        <ul style={{ paddingLeft: "0" }} className={`mega_menu sub_menu`}>
+          <div class="mega_menu_item">
+            {items.slice(0, 4).map((subItem, index) => (
+              <NavItem key={index} {...subItem} />
+            ))}
+          </div>
+          <div class="mega_menu_item">
+            {items.slice(4, 8).map((subItem, index) => (
+              <NavItem key={index} {...subItem} />
+            ))}
+          </div>
         </ul>
       </li>
     );
