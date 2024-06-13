@@ -26,12 +26,12 @@ const NavItem = ({ component, name, to, class: className, items }) => {
       <li className={`${className} mega_menu_dropdown mega_menu_demo_2 has_dropdown`}>
         <span>{name} <TfiAngleDown /></span>
         <ul style={{ paddingLeft: "0" }} className={`mega_menu sub_menu`}>
-          <div class="mega_menu_item">
+          <div className="mega_menu_item">
             {items.slice(0, 4).map((subItem, index) => (
               <NavItem key={index} {...subItem} />
             ))}
           </div>
-          <div class="mega_menu_item">
+          <div className="mega_menu_item">
             {items.slice(4, 8).map((subItem, index) => (
               <NavItem key={index} {...subItem} />
             ))}
