@@ -4,11 +4,12 @@ const ProductSchema = new mongoose.Schema({
     name:String,
     password:String,
     email:{
-        type:"String",
+        type:String,
         required:true,
         unique:true,
     },
-    phone:String,
+    phone:String, 
+    category:String,
 });
 
 export const Product = mongoose.models.Product || mongoose.model('Product', ProductSchema);

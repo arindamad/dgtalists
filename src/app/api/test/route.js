@@ -19,15 +19,16 @@ export async function GET(request) {
 }
 
 // Handler for POST request
-export async function POST(request) {
+export async function POST(request,res) {
   await connectDB();
-
+  
   // Create dummy data
   const product = new Product({
-    name: 'Dummy Product',
-    password: 'dummyPassword',
-    email: 'dummy@example2.com',
-    phone: '9123827906',
+    name: request.body.name,
+    password: request.body.password,
+    email: request.body.email,
+    phone: request.body.phone,
+    category: request.body.category
   });
 
   // Save the product to the database
