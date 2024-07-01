@@ -1,9 +1,15 @@
 "use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import Slider from 'react-slick'
+import Modal from '@/component/modal/Modal'
 
 const AkCaseStudySlider = () => {
+    const [show, setShow] = useState(false);
+    
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+
     const settings = {
         dots: false,
         arrows: false,
@@ -297,7 +303,7 @@ const AkCaseStudySlider = () => {
                     <div className="lookinh_for_content">
                         <h5 className="heading">Looking For Something Similar?</h5>
                         <p>Hit the button below and Contact Us for Consultation</p>
-                        <a href="#" className="cta" data-bs-toggle="modal" data-bs-target=".enquiry_modal">Get Free Consultation</a>
+                        <a className="cta" onClick={handleShow} data-bs-toggle="modal" data-bs-target=".enquiry_modal">Get Free Consultation</a>
                     </div>
                 </div>
             </div>
@@ -440,6 +446,7 @@ const AkCaseStudySlider = () => {
                     </Slider>
                 </div>
             </div>
+            <Modal show={show} onHide={handleClose}/>
         </section>
     )
 }

@@ -57,11 +57,11 @@ const Vlogs = () => {
 
               <div className="post-info">
 
-                <Link href="blog-details-app-store-optimizing-boosting">
+                <Link href="#">
                   <h2>App Store Optimization for boosting your App's Visibility: Tips and Tricks</h2>
                 </Link>
 
-                <Link href="blog-details-app-store-optimizing-boosting" className="cta">Read More</Link>
+                <Link href="#" className="cta">Read More</Link>
 
 
 
@@ -84,10 +84,10 @@ const Vlogs = () => {
 
               <div className="post-info">
 
-                <Link href="blog-details-required-web-developemnt">
+                <Link href="#">
                   <h2>What is required for web application development?</h2>
                 </Link>
-                <Link href="blog-details-required-web-developemnt" className="cta">Read More</Link>
+                <Link href="#" className="cta">Read More</Link>
 
 
 

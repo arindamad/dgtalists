@@ -1,6 +1,12 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
+import Modal from '@/component/modal/Modal';
 
 const AiBreadcrumb = () => {
+  const [show, setShow] = useState(false);
+    
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
   return (
     <section className="breadcrumb-banner ai-Breadcrumb" style={{backgroundImage: `url(/team_members.jpg)`}}>
     <div className="container">
@@ -13,11 +19,13 @@ const AiBreadcrumb = () => {
               your specific needs, budget, and timeframe. Increase your competitive advantage with a custom solution.
             </p>
 
-            <a className="cta cta-1" href="#">Hire A Developer</a>
+            <a className="cta cta-1" onClick={handleShow}>Hire A Developer</a>
           </div>
         </div>
       </div>
     </div>
+    <Modal show={show} onHide={handleClose}/>
+    
   </section>
   )
 }

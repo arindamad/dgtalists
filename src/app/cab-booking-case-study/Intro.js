@@ -1,19 +1,22 @@
 "use client"
 import Image from 'next/image'
 import React, { useState } from 'react'
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+import Modal from '@/component/modal/Modal'
 
 const Intro = () => {
-    const [activeTab,setActiveTab]=useState({
-        admin:true,
-        passenger:false,
-        driver:false
+    const [show, setShow] = useState(false);
+
+    const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);
+    const [activeTab, setActiveTab] = useState({
+        admin: true,
+        passenger: false,
+        driver: false
     })
-    const [activeTab2,setActiveTab2]=useState({
-        admin:true,
-        passenger:false,
-        driver:false
+    const [activeTab2, setActiveTab2] = useState({
+        admin: true,
+        passenger: false,
+        driver: false
     })
     return (
         <>
@@ -25,8 +28,7 @@ const Intro = () => {
                                 Solutions</h2>
                             <p>Supercar also referred to as an exotic is a luxury, high-performance sports car or grand tourer. </p>
                             <div>
-                                <a href="#" className="cta" data-toggle="modal" data-target="#popupModal">Request for A Free
-                                    Demo</a>
+                                <a onClick={handleShow} className="cta" data-toggle="modal" data-target="#popupModal">Request for A Free Demo</a>
 
                             </div>
                         </div>
@@ -154,13 +156,13 @@ const Intro = () => {
                         <div className="col-lg-12">
                             <div className="tabBox">
                                 <ul className="tabs">
-                                    <li className={`${activeTab.admin && 'active'}`} onClick={()=>setActiveTab({admin:true,passenger:false,driver:false})}><a href="#admin-panel" className="adm-p">Admin Panel</a></li>
-                                    <li className={`${activeTab.passenger && 'active'}`} onClick={()=>setActiveTab({admin:false,passenger:true,driver:false})}><a href="#passenger-panel" className="psngr-p">Passenger Panel</a></li>
-                                    <li className={`${activeTab.driver && 'active'}`} onClick={()=>setActiveTab({admin:false,passenger:false,driver:true})}><a href="#driver-panel" className="dvr-p">Driver Panel</a></li>
+                                    <li className={`${activeTab.admin && 'active'}`} onClick={() => setActiveTab({ admin: true, passenger: false, driver: false })}><a href="#admin-panel" className="adm-p">Admin Panel</a></li>
+                                    <li className={`${activeTab.passenger && 'active'}`} onClick={() => setActiveTab({ admin: false, passenger: true, driver: false })}><a href="#passenger-panel" className="psngr-p">Passenger Panel</a></li>
+                                    <li className={`${activeTab.driver && 'active'}`} onClick={() => setActiveTab({ admin: false, passenger: false, driver: true })}><a href="#driver-panel" className="dvr-p">Driver Panel</a></li>
                                 </ul>
 
                                 <div className="tabContainer">
-                                    <div id="admin-panel" style={{display:`${!activeTab.admin ? "none":"block"}`}} className="tabContent">
+                                    <div id="admin-panel" style={{ display: `${!activeTab.admin ? "none" : "block"}` }} className="tabContent">
                                         <div className="row">
                                             <div className="col-lg-6 order-2 order-lg-1">
                                                 <div className="left-img">
@@ -230,7 +232,7 @@ const Intro = () => {
 
                                         </div>
                                     </div>
-                                    <div id="passenger-panel" style={{display:`${!activeTab.passenger ? "none":"block"}`}} className="tabContent">
+                                    <div id="passenger-panel" style={{ display: `${!activeTab.passenger ? "none" : "block"}` }} className="tabContent">
                                         <div className="row">
                                             <div className="col-lg-6 order-2 order-lg-1">
                                                 <div className="left-img">
@@ -320,7 +322,7 @@ const Intro = () => {
 
                                     </div>
 
-                                    <div id="driver-panel" style={{display:`${!activeTab.driver ? "none":"block"}`}} className="tabContent">
+                                    <div id="driver-panel" style={{ display: `${!activeTab.driver ? "none" : "block"}` }} className="tabContent">
                                         <div className="row">
                                             <div className="col-lg-6 order-2 order-lg-1">
                                                 <div className="left-img">
@@ -417,21 +419,21 @@ const Intro = () => {
                     <div className="row">
                         <div className="col-lg-12">
                             <ul id="tabs" className="nav nav-tabs ak_nav" role="tablist">
-                                <li onClick={()=>setActiveTab2({admin:true,passenger:false,driver:false})} className={`nav-item`}>
-                                    <a id="tab-A" href="#pane-A" className={`nav-link ${activeTab2.admin && 'active'}`}  data-toggle="tab" role="tab">Admin Detail
+                                <li onClick={() => setActiveTab2({ admin: true, passenger: false, driver: false })} className={`nav-item`}>
+                                    <a id="tab-A" href="#pane-A" className={`nav-link ${activeTab2.admin && 'active'}`} data-toggle="tab" role="tab">Admin Detail
                                         Features</a>
                                 </li>
-                                <li onClick={()=>setActiveTab2({admin:false,passenger:true,driver:false})} className={`nav-item`}>
+                                <li onClick={() => setActiveTab2({ admin: false, passenger: true, driver: false })} className={`nav-item`}>
                                     <a id="tab-B" href="#pane-B" className={`nav-link ${activeTab2.passenger && 'active'}`} data-toggle="tab" role="tab">Rider Detail Features</a>
                                 </li>
-                                <li onClick={()=>setActiveTab2({admin:false,passenger:false,driver:true})} className={`nav-item`}>
-                                    <a id="tab-C" href="#pane-C"  className={`nav-link ${activeTab2.driver && 'active'}`} data-toggle="tab" role="tab">Driver Detail Features </a>
+                                <li onClick={() => setActiveTab2({ admin: false, passenger: false, driver: true })} className={`nav-item`}>
+                                    <a id="tab-C" href="#pane-C" className={`nav-link ${activeTab2.driver && 'active'}`} data-toggle="tab" role="tab">Driver Detail Features </a>
                                 </li>
                             </ul>
 
 
                             <div id="content" className="tab-content" role="tablist">
-                                <div style={{display:`${!activeTab2.admin ? 'none':'block'}`}} id="pane-A" className="card each_tab   active" role="tabpanel" aria-labelledby="tab-A">
+                                <div style={{ display: `${!activeTab2.admin ? 'none' : 'block'}` }} id="pane-A" className="card each_tab   active" role="tabpanel" aria-labelledby="tab-A">
                                     <div className="card-header" role="tab" id="heading-A">
                                         <h5 className="mb-0">
                                             <a data-toggle="collapse" href="#collapse-A" aria-expanded="true" aria-controls="collapse-A">
@@ -689,7 +691,7 @@ const Intro = () => {
                                     </div>
                                 </div>
 
-                                <div style={{display:`${!activeTab2.driver ? 'none':'block'}`}} id="pane-B" className="card each_tab  " role="tabpanel" aria-labelledby="tab-B">
+                                <div style={{ display: `${!activeTab2.driver ? 'none' : 'block'}` }} id="pane-B" className="card each_tab  " role="tabpanel" aria-labelledby="tab-B">
                                     <div className="card-header" role="tab" id="heading-B">
                                         <h5 className="mb-0">
                                             <a className="collapsed" data-toggle="collapse" href="#collapse-B" aria-expanded="false"
@@ -819,7 +821,7 @@ const Intro = () => {
                                     </div>
                                 </div>
 
-                                <div style={{display:`${!activeTab2.passenger ? 'none':'block'}`}} id="pane-C" className="card each_tab tab-pane " role="tabpanel" aria-labelledby="tab-C">
+                                <div style={{ display: `${!activeTab2.passenger ? 'none' : 'block'}` }} id="pane-C" className="card each_tab tab-pane " role="tabpanel" aria-labelledby="tab-C">
                                     <div className="card-header" role="tab" id="heading-C">
                                         <h5 className="mb-0">
                                             <a className="collapsed" data-toggle="collapse" href="#collapse-C" aria-expanded="false"
@@ -983,7 +985,7 @@ const Intro = () => {
                         <p>Lorem Ipsum has been the industry's standard dummy text ever since, when an unknown printer took a galley
                             of type and scrambled it to make a type specimen book.</p>
 
-                        <a href="#" className="cta" data-toggle="modal" data-target="#bottompopupModal">Request For A
+                        <a onClick={handleShow} className="cta" data-toggle="modal" data-target="#bottompopupModal">Request For A
                             quote</a>
                     </header>
 
@@ -1098,6 +1100,7 @@ const Intro = () => {
                     </div>
                 </div>
             </section>
+            <Modal show={show} onHide={handleClose}/>
 
         </>
 

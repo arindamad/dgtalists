@@ -1,7 +1,13 @@
+"use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from '@/component/modal/Modal'
 
 const WeOffer = () => {
+  const [show, setShow] = useState(false);
+    
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
   return (
     <section className="offer-software" id="offer-software">
       <div className="container">
@@ -34,9 +40,10 @@ const WeOffer = () => {
         </div>
 
         <div className="button-1">
-          <a className="cta" href="#" data-bs-toggle="modal" data-bs-target=".enquiry_modal_wrap">Discuss Your Project</a>
+          <a className="cta" onClick={handleShow} data-bs-toggle="modal" data-bs-target=".enquiry_modal_wrap">Discuss Your Project</a>
         </div>
       </div>
+      <Modal show={show} onHide={handleClose}/>
     </section>
   )
 }

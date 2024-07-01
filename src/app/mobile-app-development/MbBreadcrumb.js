@@ -1,7 +1,13 @@
+"use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from '@/component/modal/Modal'
 
 const MbBreadcrumb = () => {
+  const [show, setShow] = useState(false);
+    
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
   return (
     <section className="breadcrumb-banner mobile-app-banner" style={{backgroundImage: 'url(/mobile-app-banner.jpg)'}}>
     <div className="container">
@@ -16,7 +22,7 @@ const MbBreadcrumb = () => {
               connections. Accelerated delivery ensures rapid functionality delivery, with no compromise on the quality
               front. </p>
 
-            <a className="cta" href="#">Talk To Us</a>
+            <a className="cta" onClick={handleShow}>Talk To Us</a>
 
           </div>
         </div>
@@ -25,6 +31,7 @@ const MbBreadcrumb = () => {
         </div>
       </div>
     </div>
+    <Modal show={show} onHide={handleClose}/>
   </section>
   )
 }

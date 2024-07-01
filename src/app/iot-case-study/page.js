@@ -1,9 +1,14 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Accordion from 'react-bootstrap/Accordion';
+import Modal from '@/component/modal/Modal';
 
 const IotCaseStudy = () => {
+    const [show, setShow] = useState(false);
+    
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
     return (
         <>
             <section className="breadcrumb-banner ai-Breadcrumb" style={{ backgroundImage: `url(/ai-software-development-bg.jpg)` }}>
@@ -19,7 +24,7 @@ const IotCaseStudy = () => {
                                     your specific needs, budget, and timeframe. Increase your competitive advantage with a custom solution.
                                 </p>
 
-                                <a className="cta cta-1" href="#">Hire A Developer</a>
+                                <a className="cta cta-1" onClick={handleShow}>Hire A Developer</a>
                             </div>
                         </div>
                     </div>
@@ -258,6 +263,7 @@ const IotCaseStudy = () => {
                     </div>
                 </div>
             </main>
+            <Modal show={show} onHide={handleClose}/>
         </>
     )
 }

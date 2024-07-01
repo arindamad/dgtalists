@@ -1,9 +1,14 @@
 "use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import Accordion from 'react-bootstrap/Accordion';
+import Modal from '@/component/modal/Modal';
 
 const Emerging = () => {
+    const [show, setShow] = useState(false);
+
+    const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);
     return (
         <section className="emerging emerging-1" id="emerging">
             <div className="container">
@@ -34,7 +39,7 @@ const Emerging = () => {
                                                     <li>Android App Integration with Mobile Pay</li>
                                                 </ul>
                                             </div>
-                                            <a className="cta" href="#" data-bs-toggle="modal" data-bs-target=".enquiry_modal_wrap">Hire Flutter Developer</a>
+                                            <a className="cta" onClick={handleShow} data-bs-toggle="modal" data-bs-target=".enquiry_modal_wrap">Hire Flutter Developer</a>
                                         </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="1">
@@ -55,7 +60,7 @@ const Emerging = () => {
                                                     <li>Android App Integration with Mobile Pay</li>
                                                 </ul>
                                             </div>
-                                            <a className="cta" href="#" data-bs-toggle="modal" data-bs-target=".enquiry_modal_wrap">Hire Flutter Developer</a>
+                                            <a className="cta" onClick={handleShow} data-bs-toggle="modal" data-bs-target=".enquiry_modal_wrap">Hire Flutter Developer</a>
                                         </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="2">
@@ -76,7 +81,7 @@ const Emerging = () => {
                                                     <li>Android App Integration with Mobile Pay</li>
                                                 </ul>
                                             </div>
-                                            <a className="cta" href="#" data-bs-toggle="modal" data-bs-target=".enquiry_modal_wrap">Hire Flutter Developer</a>
+                                            <a className="cta" onClick={handleShow} data-bs-toggle="modal" data-bs-target=".enquiry_modal_wrap">Hire Flutter Developer</a>
                                         </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="3">
@@ -99,10 +104,10 @@ const Emerging = () => {
                                                     <li>Android App Integration with Mobile Pay</li>
                                                 </ul>
                                             </div>
-                                            <a className="cta" href="#" data-bs-toggle="modal" data-bs-target=".enquiry_modal_wrap">Hire Flutter Developer</a>
+                                            <a className="cta" onClick={handleShow} data-bs-toggle="modal" data-bs-target=".enquiry_modal_wrap">Hire Flutter Developer</a>
                                         </Accordion.Body>
                                     </Accordion.Item>
-                                </Accordion>                                
+                                </Accordion>
                             </div>
                         </div>
                         <div className="col-lg-4">
@@ -113,6 +118,8 @@ const Emerging = () => {
                     </div>
                 </div>
             </div>
+            <Modal show={show} onHide={handleClose} />
+
         </section>
     )
 }

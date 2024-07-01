@@ -1,10 +1,15 @@
 'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import Accordion from 'react-bootstrap/Accordion';
+import Modal from '@/component/modal/Modal';
 
 
 const NodeDevelopment = () => {
+    const [show, setShow] = useState(false);
+    
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
     return (
         <>
             <section className="node-development" id="node-development" style={{ backgroundImage: `url(/node-development-bg.jpg)` }}>
@@ -409,7 +414,7 @@ const NodeDevelopment = () => {
                         </div>
                     </div>
                     <div className="button-1">
-                        <a className="cta" href="#">Discuss Your Project</a>
+                        <a className="cta"  onClick={handleShow}>Discuss Your Project</a>
                     </div>
                 </div>
             </section>
@@ -491,6 +496,7 @@ const NodeDevelopment = () => {
                     </div>
                 </div>
             </section>
+            <Modal show={show} onHide={handleClose}/>
         </>
     )
 }

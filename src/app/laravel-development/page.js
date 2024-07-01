@@ -1,10 +1,15 @@
 'use client'
 import Image from 'next/image';
-import React from 'react'
+import React, { useState } from 'react'
 import CallUs from '../custom-software-development/(softwerDevelopment)/CallUs'
 import Accordion from 'react-bootstrap/Accordion';
+import Modal from '@/component/modal/Modal';
 
 const LaravelDev = () => {
+    const [show, setShow] = useState(false);
+    
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
     return (
         <>
             <section className="breadcrumb-banner" style={{ backgroundImage: `url(/laravel-bg.jpg)` }}>
@@ -224,7 +229,7 @@ const LaravelDev = () => {
                                 </div>
                             </div>
                         </div>
-                        <a className="cta" href="#" data-bs-toggle="modal" data-bs-target=".enquiry_modal_wrap">Hire Laravel Developer</a>
+                        <a className="cta" onClick={handleShow} data-bs-toggle="modal" data-bs-target=".enquiry_modal_wrap">Hire Laravel Developer</a>
                     </div>
                 </div>
             </section>
@@ -336,6 +341,8 @@ const LaravelDev = () => {
                     </div>
                 </div>
             </section>
+            <Modal show={show} onHide={handleClose}/>
+
         </>
     )
 }

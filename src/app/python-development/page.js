@@ -1,8 +1,15 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Breadceumb from '../custom-software-development/(softwerDevelopment)/Breadcermb';
 import Image from 'next/image'
+import Modal from '@/component/modal/Modal';
+
 
 const PythonDev = () => {
+  const [show, setShow] = useState(false);
+    
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
   return (
     <>
     <Breadceumb data1={'Hire our Python Development experts to get the most transformational services that stand out of the clutter'} data2={'Looking for high quality Python development services for your projects, at affordable rates and with 100% guarantee of reliability? When there is the Dgtalists team, you need not look further. With decades of industry experience and a proven track record, we are ready to provide your business with cutting-edge, effective and result-oriented Python development services that stand out from the clutter. Discuss your projects with our specialist Python developers, now!'} url={'python-bg.png'}/>
@@ -203,7 +210,7 @@ const PythonDev = () => {
           </div>
         </div>
         <div className="button-1">
-          <a className="cta" href="#" data-bs-toggle="modal" data-bs-target=".enquiry_modal_wrap">Discuss Your Project</a>
+          <a className="cta" onClick={handleShow} data-bs-toggle="modal" data-bs-target=".enquiry_modal_wrap">Discuss Your Project</a>
         </div>
       </div>
     </section>
@@ -413,6 +420,7 @@ const PythonDev = () => {
     </section>
 
   </main>
+  <Modal show={show} onHide={handleClose}/>
     </>
   )
 }

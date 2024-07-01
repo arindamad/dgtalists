@@ -1,10 +1,15 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image';
 import CallUs from '../custom-software-development/(softwerDevelopment)/CallUs';
 import Accordion from 'react-bootstrap/Accordion';
+import Modal from '@/component/modal/Modal';
 
 const CiDev = () => {
+    const [show, setShow] = useState(false);
+    
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
     return (
         <>
             <section className="breadcrumb-banner" style={{ backgroundImage: `url(/ci-dev-bg.jpg)` }}>
@@ -200,7 +205,7 @@ const CiDev = () => {
                                     </div>
                                 </div>
                             </div>
-                            <a className="cta" href="#" data-bs-toggle="modal" data-bs-target=".enquiry_modal_wrap">Hire CI Developer</a>
+                            <a className="cta" onClick={handleShow} data-bs-toggle="modal" data-bs-target=".enquiry_modal_wrap">Hire CI Developer</a>
                         </div>
                     </div>
                 </section>
@@ -307,6 +312,7 @@ const CiDev = () => {
                 </section>
 
             </main>
+            <Modal show={show} onHide={handleClose}/>
         </>
     )
 }

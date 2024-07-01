@@ -1,7 +1,13 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Image from 'next/image'
+import Modal from '@/component/modal/Modal'
 
 const AicaseStudy3 = () => {
+    const [show, setShow] = useState(false);
+    
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
     return (
         <>
             <section className="breadcrumb-banner ai-Breadcrumb" style={{backgroundImage: `url(/ai-software-development-bg.jpg)`}}>
@@ -13,7 +19,7 @@ const AicaseStudy3 = () => {
                                 <p><h4> FOREX Prediction</h4></p>
                                 <p>We provide high-quality, cost-effective, reliable, full-cycle bespoke software development that matches your specific needs, budget, and timeframe. Increase your competitive advantage with a custom solution.</p>
 
-                                <a className="cta cta-1" href="#">Hire A Developer</a>
+                                <a className="cta cta-1" onClick={handleShow}>Hire A Developer</a>
                             </div>
                         </div>
                     </div>
@@ -176,6 +182,7 @@ const AicaseStudy3 = () => {
 
 
             </main>
+            <Modal show={show} onHide={handleClose}/>
 
         </>
     )

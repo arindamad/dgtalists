@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { BsArrowRight } from "react-icons/bs";
 import Link from 'next/link'
+import ProgressBar from 'react-bootstrap/ProgressBar';
 
 const Skill = () => {
     return (
@@ -60,8 +61,7 @@ const Skill = () => {
 
                                             <div className="progress-bar-wrap">
 
-                                                <div className="progress-bar progress-bar-1" role="progressbar " aria-valuenow="95"
-                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                <ProgressBar now={95} />
 
                                             </div>
 
@@ -73,14 +73,13 @@ const Skill = () => {
 
                                             <div className="progress-bar-wrap">
 
-                                                <div className="progress-bar progress-bar-2" role="progressbar" aria-valuenow="99" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
+                                            <ProgressBar now={99} />
 
                                             </div>
 
                                         </div>
 
-                                        <Link className="cta " href="custom-web-development">Get Started<BsArrowRight/></Link>
+                                        <Link className="cta" href="custom-web-development">Get Started<BsArrowRight/></Link>
 
                                     </div>
 
